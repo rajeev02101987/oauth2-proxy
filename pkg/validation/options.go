@@ -33,7 +33,7 @@ func Validate(o *options.Options) error {
 		http.DefaultClient = &http.Client{Transport: insecureTransport}
 	}
 
-	msgs := validateCookieOptions(o.Cookie)
+	msgs := validateCookie(o.Cookie)
 
 	if o.ClientID == "" {
 		msgs = append(msgs, "missing setting: client-id")
