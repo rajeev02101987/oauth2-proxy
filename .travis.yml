@@ -1,4 +1,7 @@
 language: go
+arch:
+  - arm64
+  - amd64
 go:
   - 1.14.x
 env:
